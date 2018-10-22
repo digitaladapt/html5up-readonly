@@ -11,6 +11,10 @@ description:
 url: "http://theme.digitaladapt.com"
 baseurl: /
 
+# set to false to hide excerpts on the homepage
+show_excerpts: true
+excerpt_separator: <!--more-->
+
 # Avatar, image location override, default /images/avatar.jpg
 # avatar: /images/avatar.jpg
 

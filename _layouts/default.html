@@ -7,98 +7,19 @@
 -->
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-	{%- seo -%}
-	{%- feed_meta -%}
-	{%- if jekyll.environment == 'production' and site.google_analytics -%}
-		{%- include google-analytics.html -%}
-	{%- endif -%}
-
-	<!-- Begin Icons, thanks to https://realfavicongenerator.net/ -->
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
-	<link rel="icon" type="image/png" sizes="194x194" href="{{ '/favicon-194x194.png' | relative_url }}">
-	<link rel="icon" type="image/png" sizes="192x192" href="{{ '/android-chrome-192x192.png' | relative_url }}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
-	<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
-	<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-	<meta name="application-name" content="{{ site.title }}">
-	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="theme-color" content="#ffffff">
-	<!-- End Icons -->
+	{%- include head.html -%}
 </head>
 <body class="is-preload">
 	<!-- Header -->
 	<section id="header">
 		<header>
-			<span class="image avatar"><img src="{{ site.avatar | default: '/images/avatar.jpg' | relative_url }}" alt="" /></span>
-			<h1 id="logo"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-			<p>{{ site.description }}</p>
+			{%- include brand.html -%}
 		</header>
 		<nav id="nav">
-			<ul>
-{%- assign: my_pages = site.pages | sort: "weight" -%}
-{%- for my_page in my_pages -%}
-	{%- if my_page.title -%}
-		{%- if my_page.url == page.url -%}
-			<li><a class="active" href="#top">{{ my_page.title }}</a></li>
-		{%- else -%}
-			<li><a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a></li>
-		{%- endif -%}
-	{%- endif -%}
-{%- endfor -%}
-			</ul>
+			{%- include nav.html -%}
 		</nav>
 		<footer>
-			<ul class="icons">
-{%- if site.dribbble_username -%}
-	<li><a href="https://dribbble.com/{{ site.dribbble_username | cgi_escape | escape }}" class="icon fa-dribbble"><span class="label">{{ site.dribbble_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.facebook_username -%}
-	<li><a href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}" class="icon fa-facebook"><span class="label">{{ site.facebook_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.flickr_username -%}
-	<li><a href="https://www.flickr.com/photos/{{ site.flickr_username | cgi_escape | escape }}" class="icon fa-flickr"><span class="label">{{ site.flickr_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.github_username -%}
-	<li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="icon fa-github"><span class="label">{{ site.github_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.bitbucket_username -%}
-	<li><a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}" class="icon fa-bitbucket"><span class="label">{{ site.bitbucket_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.instagram_username -%}
-	<li><a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}" class="icon fa-instagram"><span class="label">{{ site.instagram_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.linkedin_username -%}
-	<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="icon fa-linkedin"><span class="label">{{ site.linkedin_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.pinterest_username -%}
-	<li><a href="https://www.pinterest.com/{{ site.pinterest_username | cgi_escape | escape }}" class="icon fa-pinterest"><span class="label">{{ site.pinterest_username | escape }}</span></a></li>
-{%- endif -%}
-{%- for mst in site.mastodon -%}
-	{%- if mst.username and mst.instance -%}
-		<li><a href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" class="icon fa-mastodon"><span class="label">{{ mst.username |escape }}</span></a></li>
-	{%- endif -%}
-{%- endfor -%}
-{%- if site.twitter_username -%}
-	<li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" class="icon fa-twitter"><span class="label">{{ site.twitter_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.youtube_username -%}
-	<li><a href="https://www.youtube.com/{{ site.youtube_username | cgi_escape | escape }}" class="icon fa-youtube"><span class="label">{{ site.youtube_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.googleplus_username -%}
-	<li><a href="https://plus.google.com/{{ site.googleplus_username | escape }}" class="icon fa-google-plus"><span class="label">{{ site.googleplus_username | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.rss -%}
-	<li><a href="{{ 'feed.xml' | relative_url }}" class="icon fa-rss"><span class="label">{{ site.rss | escape }}</span></a></li>
-{%- endif -%}
-{%- if site.email -%}
-	<li><a href="mailto:{{ site.email | escape }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
-{%- endif -%}
-
-			</ul>
+			{%- include icons.html -%}
 		</footer>
 	</section>
 
@@ -107,13 +28,17 @@
 
 		<!-- Main -->
 		<div id="main">
-
-			<!-- One -->
 			<section id="top">
 				<div class="image main" data-position="center">
 					<img src="{{ page.banner | default: site.banner | default: '/images/banner.jpg' | relative_url }}" alt="" />
 				</div>
 				<div class="container">
+					<header class="major">
+						<h2>{{ page.title }}</h2>
+						{%- if page.description -%}
+							<p>{{ page.description }}</p>
+						{%- endif -%}
+					</header>
 					{{ content }}
 				</div>
 			</section>
@@ -121,26 +46,13 @@
 
 		<!-- Footer -->
 		<section id="footer">
-			<div class="container">
-				<ul class="copyright">
-					<li>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</li>
-					<!-- PER LICENSE OF THEME: ATTRIBUTION IS REQUIRED, DO NOT REMOVE -->
-					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					<li>Jekyll Port: <a href="https://digitaladapt.com">DigitalAdapt</a></li>
-				</ul>
-			</div>
+			{%- include footer.html -%}
 		</section>
 
 	</div>
 
 	<!-- Scripts -->
-	<script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/util.js' | relative_url }}"></script>
-	<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+	{%- include scripts.html -%}
 
 </body>
 </html>
