@@ -42,6 +42,7 @@ bitbucket_username: digitaladapt
 #   instance: example.com
 
 # Build Settings
+destination: /var/www/theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
