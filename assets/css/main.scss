@@ -1,3 +1,6 @@
+---
+---
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -583,6 +586,10 @@
 	}
 
 /* Image */
+
+	img {
+		max-width: 100%;
+	}
 
 	.image {
 		border-radius: _size(border-radius);

@@ -14,6 +14,10 @@ baseurl: /
 # Avatar, image location override, default /images/avatar.jpg
 # avatar: /images/avatar.jpg
 
+# Banner, default location override, default /images/banner.jpg
+# this can also be overridden on a per page basis.
+# banner: /images/banner.jpg
+
 # Social Links
 rss: rss
 twitter_username: digitaladapt
@@ -34,8 +38,6 @@ bitbucket_username: digitaladapt
 #   instance: example.com
 
 # Build Settings
-destination: /var/www/theme/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
