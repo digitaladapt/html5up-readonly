@@ -65,6 +65,9 @@
 {%- if site.github_username -%}
 	<li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="icon fa-github"><span class="label">{{ site.github_username | escape }}</span></a></li>
 {%- endif -%}
+{%- if site.bitbucket_username -%}
+	<li><a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}" class="icon fa-bitbucket"><span class="label">{{ site.bitbucket_username | escape }}</span></a></li>
+{%- endif -%}
 {%- if site.instagram_username -%}
 	<li><a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}" class="icon fa-instagram"><span class="label">{{ site.instagram_username | escape }}</span></a></li>
 {%- endif -%}
