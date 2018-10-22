@@ -1,0 +1,26 @@
+title: DigitalAdapt
+email: digitaladapt@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I help raise my daughter and son. I take care for my wife. I also build websites.
+url: "https://digitaladapt.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: DigitalAdapt
+github_username:  digitaladapt
+
+# Build settings
+destination: /var/www/theme/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
