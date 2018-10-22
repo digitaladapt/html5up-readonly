@@ -11,7 +11,7 @@ description:
 url: "http://theme.digitaladapt.com"
 baseurl: /
 
-# set to false to hide excerpts on the homepage
+# Excerpts
 show_excerpts: true
 excerpt_separator: <!--more-->
 
