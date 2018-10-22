@@ -82,7 +82,7 @@
 
 					var	$this = $(this),
 						id = $this.attr('href'),
-						$section = $(id);
+						$section = id.charAt(0) == '#' ? $(id) : [];
 
 					// No section for this link? Bail.
 						if ($section.length < 1)

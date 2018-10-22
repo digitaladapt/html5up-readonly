@@ -2,6 +2,6 @@
 title: About Me
 layout: default
 permalink: /about/
-path: /about/
+weight: 2
 ---
 Simple About Page
