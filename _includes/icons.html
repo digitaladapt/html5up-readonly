@@ -1,46 +1,46 @@
 <ul class="icons">
 {%- if site.dribbble_username -%}
-  <li><a href="https://dribbble.com/{{ site.dribbble_username | cgi_escape | escape }}" class="icon fab fa-dribbble"><span class="label">Dribbble: {{ site.dribbble_username | escape }}</span></a></li>
+  <li><a href="https://dribbble.com/{{ site.dribbble_username | cgi_escape | escape }}" class="icon"><span class="fab fa-dribbble" title="Dribbble: {{ site.dribbble_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.facebook_username -%}
-  <li><a href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}" class="icon fab fa-facebook"><span class="label">Facebook: {{ site.facebook_username | escape }}</span></a></li>
+  <li><a href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}" class="icon"><span class="fab fa-facebook" title="Facebook: {{ site.facebook_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.flickr_username -%}
-  <li><a href="https://www.flickr.com/photos/{{ site.flickr_username | cgi_escape | escape }}" class="icon fab fa-flickr"><span class="label">Flickr: {{ site.flickr_username | escape }}</span></a></li>
+  <li><a href="https://www.flickr.com/photos/{{ site.flickr_username | cgi_escape | escape }}" class="icon"><span class="fab fa-flickr" title="Flickr: {{ site.flickr_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.github_username -%}
-  <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="icon fab fa-github"><span class="label">GitHub: {{ site.github_username | escape }}</span></a></li>
+  <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="icon"><span class="fab fa-github" title="GitHub: {{ site.github_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.bitbucket_username -%}
-  <li><a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}" class="icon fab fa-bitbucket"><span class="label">BitBucket: {{ site.bitbucket_username | escape }}</span></a></li>
+  <li><a href="https://bitbucket.org/{{ site.bitbucket_username | cgi_escape | escape }}" class="icon"><span class="fab fa-bitbucket" title="BitBucket: {{ site.bitbucket_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.instagram_username -%}
-  <li><a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}" class="icon fab fa-instagram"><span class="label">Instagram{{ site.instagram_username | escape }}</span></a></li>
+  <li><a href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}" class="icon"><span class="fab fa-instagram" title="Instagram{{ site.instagram_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.linkedin_username -%}
-  <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="icon fab fa-linkedin"><span class="label">LinkedIn: {{ site.linkedin_username | escape }}</span></a></li>
+  <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="icon"><span class="fab fa-linkedin" title="LinkedIn: {{ site.linkedin_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.pinterest_username -%}
-  <li><a href="https://www.pinterest.com/{{ site.pinterest_username | cgi_escape | escape }}" class="icon fab fa-pinterest"><span class="label">Pinterest: {{ site.pinterest_username | escape }}</span></a></li>
+  <li><a href="https://www.pinterest.com/{{ site.pinterest_username | cgi_escape | escape }}" class="icon"><span class="fab fa-pinterest" title="Pinterest: {{ site.pinterest_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- for mst in site.mastodon -%}
   {%- if mst.username and mst.instance -%}
-    <li><a href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" class="icon fab fa-mastodon"><span class="label">{{ mst.instance }}: {{ mst.username | escape }}</span></a></li>
+    <li><a href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" class="icon"><span class="fab fa-mastodon" title="{{ mst.instance }}: {{ mst.username | escape }}"></span></a></li>
   {%- endif -%}
 {%- endfor -%}
 {%- if site.twitter_username -%}
-  <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" class="icon fab fa-twitter"><span class="label">Twitter: {{ site.twitter_username | escape }}</span></a></li>
+  <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" class="icon"><span class="fab fa-twitter" title="Twitter: {{ site.twitter_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.youtube_username -%}
-  <li><a href="https://www.youtube.com/{{ site.youtube_username | cgi_escape | escape }}" class="icon fab fa-youtube"><span class="label">YouTube: {{ site.youtube_username | escape }}</span></a></li>
+  <li><a href="https://www.youtube.com/{{ site.youtube_username | cgi_escape | escape }}" class="icon"><span class="fab fa-youtube" title="YouTube: {{ site.youtube_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.googleplus_username -%}
-  <li><a href="https://plus.google.com/{{ site.googleplus_username | escape }}" class="icon fab fa-google-plus"><span class="label">GooglePlus: {{ site.googleplus_username | escape }}</span></a></li>
+  <li><a href="https://plus.google.com/{{ site.googleplus_username | escape }}" class="icon"><span class="fab fa-google-plus" title="GooglePlus: {{ site.googleplus_username | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.rss -%}
-  <li><a href="{{ 'feed.xml' | relative_url }}" class="icon fas fa-rss"><span class="label">{{ site.rss | escape }}</span></a></li>
+  <li><a href="{{ 'feed.xml' | relative_url }}" class="icon"><span class="fas fa-rss" title="{{ site.rss | escape }}"></span></a></li>
 {%- endif -%}
 {%- if site.email -%}
-  <li><a href="mailto:{{ site.email | escape }}" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="mailto:{{ site.email | escape }}" class="icon"><span class="fas fa-envelope" title="Email"></span></a></li>
 {%- endif -%}
 </ul>
