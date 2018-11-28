@@ -1511,10 +1511,16 @@
 
 				.toggle {
 					@include icon;
-					height: 4em;
+					height: 44px;
 					position: absolute;
 					top: 0;
-					width: 6em;
+					width: 64px;
+					background: _palette(accent1, bg);
+					color: _palette(accent1, fg-bold) !important;
+					display: block;
+					font-size: 18px;
+					line-height: 44px;
+					text-align: center;
 					border: 0;
 					outline: 0;
 
@@ -1523,27 +1529,6 @@
 					}
 					@else {
 						left: 0;
-					}
-
-					&:before {
-						background: _palette(accent1, bg);
-						color: _palette(accent1, fg-bold);
-						content: '\f0c9';
-						display: block;
-						font-size: 18px;
-						height: 44px;
-						line-height: 44px;
-						position: absolute;
-						text-align: center;
-						top: 0;
-						width: 64px;
-
-						@if _misc(header-side) == 'right' {
-							right: 0;
-						}
-						@else {
-							left: 0;
-						}
 					}
 				}
 			}
