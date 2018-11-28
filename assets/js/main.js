@@ -124,7 +124,7 @@
 		// Title Bar.
 			$titleBar = $(
 				'<div id="titleBar">' +
-					'<a href="#header" class="toggle"><span class="fas fa-bars" title="Menu"></span></a>' +
+					'<a href="#header" class="toggle"><div><span class="fas fa-bars" title="Menu"></span></div></a>' +
 					'<span class="title">' + $('#logo').html() + '</span>' +
 				'</div>'
 			)
