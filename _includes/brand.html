@@ -1,3 +1,11 @@
 <span class="image avatar"><img src="{{ site.avatar | default: '/images/avatar.jpg' | relative_url }}" alt="" /></span>
 <h1 id="logo"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
 <p>{{ site.description }}</p>
+
+{%- if site.matomo_url -%}
+  <!-- Matomo Image Tracker-->
+  <noscript>
+	  <img src="{{ site.matomo_url }}piwik.php?idsite={{ site.matomo_siteId }}&amp;rec=1" style="border:0" alt="" />
+  </noscript>
+  <!-- End Matomo -->
+{%- endif -%}
