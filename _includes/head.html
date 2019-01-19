@@ -21,3 +21,7 @@
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#ffffff">
 <!-- End Icons -->
+
+{%- if site.matomo_url -%}
+  {%- include matomo.html -%}
+{%- endif -%}

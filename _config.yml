@@ -11,6 +11,10 @@ description:
 url: "http://theme.digitaladapt.com"
 baseurl: /
 
+# Matomo Tracking
+matomo_url: "//stats.digitaladapt.com/"
+matomo_siteId: 2
+
 # Excerpts
 show_excerpts: true
 excerpt_separator: <!--more-->
