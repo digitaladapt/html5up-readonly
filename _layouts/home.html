@@ -4,27 +4,4 @@ layout: default
 
 {{ content }}
 
-{%- if site.posts.size > 0 -%}
-  <section id="articles" class="">
-  	<div class="container">
-  		<h3>{{ page.list_title | default: "Posts" }}</h3>
-  		<div class="features">
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        {%- for post in site.posts -%}
-    			<article>
-    				<a href="{{ post.url | relative_url }}" class="image">
-              <img src="{{ post.banner }}" alt="">
-            </a>
-    				<div class="inner">
-    					<h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-              {{ post.date | date: date_format }}
-              {%- if site.show_excerpts -%}
-                {{ post.excerpt }}
-              {%- endif -%}
-    				</div>
-    			</article>
-  			{%- endfor -%}
-  		</div>
-  	</div>
-  </section>
-{%- endif -%}
+{%- include posts.html posts = site.posts -%}

@@ -1138,6 +1138,10 @@
 				vertical-align: middle;
 				width: 50%;
 
+				&:only-child {
+					width: 98%;
+				}
+
 				> :last-child {
 					margin-bottom: 0;
 				}

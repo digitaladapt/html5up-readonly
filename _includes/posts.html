@@ -1,35 +1,28 @@
-{%- for category in site.categories -%}
-  {%- if category[0] != page.category -%}
-    {%- continue -%}
-  {%- endif -%}
-
-  {%- assign posts = category[1] -%}
-
-  {%- if posts.size > 0 -%}
-    <section id="articles" class="">
-      <div class="container">
-        {%- if page.list_title -%}
-          <h3>{{ page.list_title | capitalize }}</h3>
-        {%- endif -%}
-        <div class="features">
-          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-          {%- for post in posts -%}
-            <article>
+{%- if include.posts and include.posts.size > 0 -%}
+  <section id="articles" class="">
+    <div class="container">
+      {%- if page.list_title -%}
+        <h3>{{ page.list_title | capitalize }}</h3>
+      {%- endif -%}
+      <div class="features">
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        {%- for post in include.posts -%}
+          <article>
+            {%- if post.banner -%}
               <a href="{{ post.url | relative_url }}" class="image">
                 <img src="{{ post.banner }}" alt="">
               </a>
-              <div class="inner">
-                <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-                <div>{{ post.date | date: date_format }}</div>
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
-                {%- endif -%}
-              </div>
-            </article>
-          {%- endfor -%}
-        </div>
+            {%- endif -%}
+            <div class="inner">
+              <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+              <div>{{ post.date | date: date_format }}</div>
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </div>
+          </article>
+        {%- endfor -%}
       </div>
-    </section>
-  {%- endif -%}
-  {%- break -%}
-{%- endfor -%}
+    </div>
+  </section>
+{%- endif -%}

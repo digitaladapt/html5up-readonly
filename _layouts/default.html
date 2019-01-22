@@ -30,7 +30,7 @@
 		<div id="main">
 			<section id="top">
 				<div class="image main" data-position="center">
-					<img src="{{ page.banner | default: site.banner | default: '/images/banner.jpg' | relative_url }}" alt="" />
+					<img src="{{ site.banner | default: '/images/banner.jpg' | relative_url }}" alt="" />
 				</div>
 				<div class="container">
 					<header class="major">
