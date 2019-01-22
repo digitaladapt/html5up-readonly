@@ -168,6 +168,11 @@
 		}
 	}
 
+	h1 {
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+
 	h2 {
 		font-size: 2em;
 		line-height: 1.5em;
@@ -339,6 +344,12 @@
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 		}
 
+		h1 + p {
+			font-size: 1.5em;
+			margin-top: -0.75em;
+			line-height: 1.5em;
+		}
+
 		h2 + p {
 			font-size: 1.25em;
 			margin-top: -0.5em;
@@ -360,7 +371,7 @@
 		}
 
 		&.major {
-			h2 {
+			h1 {
 				color: _palette(accent1, bg);
 				font-size: 3.5em;
 
@@ -1584,6 +1595,10 @@
 				}
 			}
 
+			h1 {
+				font-size: 2em;
+			}
+
 			h2 {
 				font-size: 1.75em;
 			}
@@ -1620,7 +1635,7 @@
 				}
 
 				&.major {
-					h2 {
+					h1 {
 						font-size: 2.5em;
 
 						& + p {
