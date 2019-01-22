@@ -15,6 +15,9 @@ baseurl: /
 matomo_url: "//stats.digitaladapt.com/"
 matomo_siteId: 2
 
+# Contact Me About This Page
+page_contact: false
+
 # Excerpts
 show_excerpts: true
 excerpt_separator: <!--more-->
