@@ -28,6 +28,9 @@
     <li><a rel="me" href="https://{{ mst.instance | cgi_escape | escape}}/@{{mst.username}}" class="icon"><span class="fab fa-mastodon" title="{{ mst.instance }}: {{ mst.username | escape }}"></span></a></li>
   {%- endif -%}
 {%- endfor -%}
+{%- if site.keybase_username -%}
+  <li><a href="https://keybase.io/{{ site.keybase_username | cgi_escape | escape }}" class="icon"><span class="fab fa-keybase" title="Keybase: {{ site.keybase_username | escape }}"></span></a></li>
+{%- endif -%}
 {%- if site.twitter_username -%}
   <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" class="icon"><span class="fab fa-twitter" title="Twitter: {{ site.twitter_username | escape }}"></span></a></li>
 {%- endif -%}
