@@ -50,7 +50,7 @@ keybase_username: digitaladapt
 #   instance: example.com
 
 # Build Settings
-destination: /var/www/theme
+destination: /var/www/style
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
