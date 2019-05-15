@@ -8,12 +8,12 @@ description:
   Google search results) and in your feed.xml site description.
 
 # Site URL
-url: "https://digitaladapt.style"
+url: "https://style.digitaladapt.com"
 baseurl: /
 
 # Matomo Tracking
-matomo_url: "//digitaladapt.click/"
-matomo_siteId: 1
+# matomo_url: ""
+# matomo_siteId: 1
 
 # Contact Me About This Page
 page_contact: false
@@ -50,7 +50,7 @@ keybase_username: digitaladapt
 #   instance: example.com
 
 # Build Settings
-destination: /var/www/style
+destination: public
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
