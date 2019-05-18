@@ -8,11 +8,11 @@ description:
   Google search results) and in your feed.xml site description.
 
 # Site URL
-url: "https://style.digitaladapt.com"
+url: "https://theme.digitaladapt.com"
 baseurl: /
 
 # Matomo Tracking
-# matomo_url: ""
+# matomo_url: "://track.tld"
 # matomo_siteId: 1
 
 # Contact Me About This Page
