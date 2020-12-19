@@ -76,6 +76,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   html5up-readonly!
+  jekyll (~> 4.0)
   rake (~> 12.0)
 
 BUNDLED WITH
