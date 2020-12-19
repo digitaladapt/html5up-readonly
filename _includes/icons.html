@@ -31,6 +31,9 @@
 {%- if site.keybase_username -%}
   <li><a href="https://keybase.io/{{ site.keybase_username | cgi_escape | escape }}" class="icon"><span class="fab fa-keybase" title="Keybase: {{ site.keybase_username | escape }}"></span></a></li>
 {%- endif -%}
+{%- if site.discord_id_number -%}
+  <li><a href="https://discord.com/users/{{ site.discord_id_number | cgi_escape | escape }}" class="icon"><span class="fab fa-discord" title="Discord: {{ site.discord_username | default: "" | escape }}"></span></a></li>
+{%- endif -%}
 {%- if site.twitter_username -%}
   <li><a href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" class="icon"><span class="fab fa-twitter" title="Twitter: {{ site.twitter_username | escape }}"></span></a></li>
 {%- endif -%}
