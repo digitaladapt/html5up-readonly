@@ -1,6 +1,6 @@
 # Base Settings
 title: Your awesome title
-author: Some User
+#author: Some User
 email: your-email@domain.com
 description:
   Write an awesome description for your new site here. You can edit this
@@ -32,12 +32,12 @@ excerpt_separator: <!--more-->
 # Social Links
 rss: rss
 twitter_username: digitaladapt
-github_username:  digitaladapt
-bitbucket_username: digitaladapt
+#github_username:  digitaladapt
+#bitbucket_username: digitaladapt
 # "Copy ID" from user menu, may need to enable developer mode to see option
-discord_id_number: "570971366833127425"
-discord_username: "DigitalAdapt#8238"
-keybase_username: digitaladapt
+#discord_id_number: "570971366833127425"
+#discord_username: "DigitalAdapt#8238"
+#keybase_username: digitaladapt
 # instagram_username: digitaladapt
 # dribbble_username: digitaladapt
 # facebook_username: digitaladapt
