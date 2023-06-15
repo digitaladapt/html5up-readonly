@@ -10,6 +10,7 @@ description:
 # Site URL
 url: "https://theme.digitaladapt.com"
 baseurl: /
+lang: en
 
 # Matomo Tracking
 # matomo_url: "://track.tld"
