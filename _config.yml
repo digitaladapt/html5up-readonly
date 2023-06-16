@@ -15,6 +15,7 @@ lang: en
 # Matomo Tracking
 # matomo_url: "://track.tld"
 # matomo_siteId: 1
+# google_analytics: "G-XXXXXXXXXX"
 
 # Contact Me About This Page
 page_contact: false
