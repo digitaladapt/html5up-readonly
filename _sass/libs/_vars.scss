@@ -39,26 +39,27 @@
 		border2-bg:			#718BAC,
 		border3:			#718BAC,
 		border3-bg:			#718BAC,
+        border-fg:          #111111,
 
 		accent1: (
-			bg:				#926A9B,
+			bg:				#A88BB1,
 			fg-bold:		#1F2D50,
-			fg:				mix(#926A9B, #1F2D50, 25%),
-			fg-light:		mix(#926A9B, #1F2D50, 40%)
+			fg:				mix(#A88BB1, #1F2D50, 35%),
+			fg-light:		mix(#A88BB1, #1F2D50, 50%)
 		),
 
 		accent2: (
 			bg:				#1F2D50,
-			fg-bold:		#926A9B,
-			fg:				mix(#1F2D50, #926A9B, 25%),
-			fg-light:		mix(#1F2D50, #926A9B, 40%)
+			fg-bold:		#A88BB1,
+			fg:				mix(#1F2D50, #A88BB1, 25%),
+			fg-light:		mix(#1F2D50, #A88BB1, 40%)
 		),
 
 		header: (
-			bg:				#926A9B,
+			bg:				#A88BB1,
 			fg-bold:		#1F2D50,
-			fg:				mix(#926A9B, #1F2D50, 25%),
-			fg-light:		mix(#926A9B, #1F2D50, 40%),
-			border:			mix(#926A9B, #1F2D50, 90%)
+			fg:				mix(#A88BB1, #1F2D50, 25%),
+			fg-light:		mix(#A88BB1, #1F2D50, 40%),
+			border:			mix(#A88BB1, #1F2D50, 90%)
 		)
 	);
