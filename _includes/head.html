@@ -24,3 +24,7 @@
 {%- if site.matomo_url -%}
   {%- include matomo.html -%}
 {%- endif -%}
+
+{%- if site.custom_head_html -%}
+  {{ site.custom_head_html }}
+{%- endif -%}

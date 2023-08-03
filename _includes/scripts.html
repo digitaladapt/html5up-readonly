@@ -8,3 +8,7 @@
 <script defer src="{{ '/assets/js/brands.min.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/js/solid.min.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/js/fontawesome.min.js' | relative_url }}"></script>
+
+{%- if site.custom_body_html -%}
+  {{ site.custom_body_html }}
+{%- endif -%}
