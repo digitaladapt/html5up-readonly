@@ -925,24 +925,20 @@
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+        font-size: 1.25em;
 
 		li {
-			padding: 0.6em;
-
-			&:last-child {
-				padding-right: 0 !important;
-			}
-
-			.icon {
-				&:before {
-					font-size: 1.25em;
-				}
-			}
+			padding: 0.5em;
 		}
 	}
 
-    .xxx-large {
-        font-size: xxx-large;
+    .large-icons {
+        ul.icons {
+            font-size: xxx-large;
+            li {
+                padding: 0.4em;
+            }
+        }
     }
 
 /* Table */
