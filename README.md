@@ -46,18 +46,22 @@ Within your `_config.yml` file, you can specify a number of options to customize
 ```yaml
 # Base Settings
 title: Your awesome title
-author: Some User
+#author: Some User
 email: your-email@domain.com
 description:
-  Write an awesome description for your new site here.
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
 # Site URL
 url: "https://theme.digitaladapt.com"
 baseurl: /
+lang: en
 
 # Matomo Tracking
 # matomo_url: "://track.tld"
 # matomo_siteId: 1
+# google_analytics: "G-XXXXXXXXXX"
 
 # Contact Me About This Page
 page_contact: false
@@ -75,18 +79,19 @@ excerpt_separator: <!--more-->
 
 # Social Links
 rss: rss
-twitter_username: digitaladapt
+#twitter_username: digitaladapt
 github_username:  digitaladapt
-bitbucket_username: digitaladapt
+#bitbucket_username: digitaladapt
 # "Copy ID" from user menu, may need to enable developer mode to see option
-discord_id_number: "570971366833127425"
-discord_username: "DigitalAdapt#8238"
-keybase_username: digitaladapt
+#discord_id_number: "570971366833127425"
+#discord_username: "DigitalAdapt#8238"
+#keybase_username: digitaladapt
 # instagram_username: digitaladapt
 # dribbble_username: digitaladapt
 # facebook_username: digitaladapt
 # flickr_username: digitaladapt
 # linkedin_username: digitaladapt
+# reddit_username: digitaladapt
 # pinterest_username: digitaladapt
 # youtube_username: digitaladapt
 # googleplus_username: +digitaladapt
@@ -95,4 +100,16 @@ keybase_username: digitaladapt
 # mastodon:
 # - username: digitaladapt
 #   instance: example.com
+
+# custom additions to head/body
+# for example, this style will put the page heading on top of the banner image.
+#custom_head_html: '<style> header.major h1 { margin-top: -3em !important; position: relative; } </style>'
+#custom_body_html: '<script> console.log("you can add stuff here."); </script>'
+
+# Build Settings
+# default destination is "_site"
+#destination: public
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 ```
