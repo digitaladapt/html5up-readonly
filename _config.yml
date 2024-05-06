@@ -61,7 +61,8 @@ github_username:  digitaladapt
 #custom_body_html: '<script> console.log("you can add stuff here."); </script>'
 
 # Build Settings
-destination: public
+# default destination is "_site"
+#destination: public
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
