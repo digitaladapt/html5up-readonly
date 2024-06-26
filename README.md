@@ -4,7 +4,7 @@ This is a [Jekyll](https://jekyllrb.com/) theme based on the [Read Only](https:/
 
 There is a [live demo of this theme](https://theme.digitaladapt.com/).
 
-I have also created an experimental color, which I use on my website [DigitalAdapt.com](https://www.digitaladapt.com/); which can be used by appending `, branch: 'experimental'` to the gem line below.
+I have also created an experimental color, which I use on my website [DigitalAdapt.com](https://digitaladapt.com/); which can be used by appending `, branch: 'experimental'` to the gem line below.
 
 ## Installation
 
