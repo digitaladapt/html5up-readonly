@@ -1,5 +1,8 @@
 # this is an example config file for caddy
 theme.digitaladapt.com {
+	log {
+		output file /data/logs/theme.log
+	}
 	root * /data/theme
 	file_server {
 		hide .git*
