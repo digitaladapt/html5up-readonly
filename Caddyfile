@@ -1,0 +1,14 @@
+# this is an example config file for caddy
+theme.digitaladapt.com {
+	root * /data/theme
+	file_server {
+		hide .git*
+		hide Caddyfile
+		hide Domainfile
+	}
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}
+
