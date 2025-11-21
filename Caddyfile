@@ -3,14 +3,14 @@ theme.digitaladapt.com {
 	log {
 		output file /data/logs/theme.log
 	}
-	root * /data/theme
+	root /data/theme
 	file_server {
 		hide .git*
 		hide Caddyfile
 		hide Domainfile
 	}
 	handle_errors {
-		rewrite * /404.html
+		rewrite /404.html
 		file_server
 	}
 }
