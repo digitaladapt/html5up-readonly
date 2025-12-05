@@ -3,15 +3,17 @@ theme.digitaladapt.com {
 	log {
 		output file /data/logs/theme.log
 	}
+	# no need for pretty_errors, has custom error page
+	handle_errors {
+		rewrite /404.html
+		file_server
+	}
+
 	root /data/theme
 	file_server {
 		hide .git*
 		hide Caddyfile
 		hide Domainfile
-	}
-	handle_errors {
-		rewrite /404.html
-		file_server
 	}
 }
 
