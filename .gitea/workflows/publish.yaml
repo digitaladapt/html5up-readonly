@@ -23,7 +23,7 @@ jobs:
       - name: Add GitHub Remote
         env:
           SYNC_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
-		  SYNC_TARGET: ${{ vars.SYNC_GITHUB_TARGET }}
+          SYNC_TARGET: ${{ vars.SYNC_GITHUB_TARGET }}
         run: |
           git remote add github "https://digitaladapt:${SYNC_TOKEN}@github.com/$SYNC_TARGET"
 
